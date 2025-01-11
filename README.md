@@ -1,2 +1,0 @@
-# MyOyukiWeb
-Oyukiweb
