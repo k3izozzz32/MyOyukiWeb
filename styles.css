@@ -1,64 +1,70 @@
-/* Reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo general de la página */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-/* Contenedor común */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Estilo de la cabecera */
-header {
+button {
+    padding: 10px 15px;
     background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 40px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-header h1 {
-    margin: 0;
+button:hover {
+    background-color: #45a049;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-/* Estilo de las publicaciones */
-section.publicacion {
-    background-color: white;
+/* Estilos para el formulario */
+.form-container {
+    width: 300px;
     padding: 20px;
-    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: #4CAF50;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-section p {
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
     margin-top: 10px;
-    color: #666;
 }
 
-/* Estilo del pie de página */
-footer {
-    text-align: center;
-    margin-top: 40px;
+/* Modo oscuro */
+body.dark-mode {
     background-color: #333;
     color: white;
-    padding: 10px 0;
 }
 
+body.dark-mode .form-container {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #555;
+}
+
+body.dark-mode input {
+    background-color: #666;
+    color: white;
+    border: 1px solid #555;
+}
