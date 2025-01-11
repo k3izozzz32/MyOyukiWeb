@@ -7,24 +7,69 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Botón para cambiar entre modo oscuro y claro -->
-    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Modo Oscuro</button>
 
-    <!-- Formulario de inicio de sesión -->
-    <div id="login-form" class="form-container">
-        <h2>Iniciar sesión</h2>
-        <form id="login" onsubmit="login(event)">
-            <label for="username">Usuario:</label>
-            <input type="text" id="login-username" required>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="login-password" required>
-            <button type="submit">Iniciar sesión</button>
+    <!-- Encabezado -->
+    <header>
+        <h1>Instagram Clone</h1>
+    </header>
+
+    <!-- Formulario para subir una nueva publicación -->
+    <section class="new-post">
+        <h2>Subir nueva publicación</h2>
+        <form>
+            <label for="title">Título:</label>
+            <input type="text" id="title" placeholder="Título de la publicación" required><br><br>
+
+            <label for="imageUrl">URL de la imagen:</label>
+            <input type="text" id="imageUrl" placeholder="Enlace a la imagen" required><br><br>
+
+            <button type="submit">Subir publicación</button>
         </form>
-        <p>¿No tienes cuenta? <a href="javascript:void(0);" onclick="showRegister()">Regístrate aquí</a></p>
-    </div>
+    </section>
 
-    <!-- Formulario de registro -->
-    <div id="register-form" class="form-container" style="display:none;">
-        <h2>Regístrate</h2>
-        <form id="register" onsubmit="register(event)">
-            <labe
+    <!-- Publicaciones -->
+    <section class="posts">
+        <h2>Publicaciones</h2>
+
+        <div class="post">
+            <h3>Mi primer viaje</h3>
+            <img src="https://via.placeholder.com/400" alt="Imagen de publicación">
+            <div class="actions">
+                <button class="like-btn">Me gusta</button>
+                <span class="likes">0 me gusta</span>
+            </div>
+            <div class="comments">
+                <h4>Comentarios:</h4>
+                <ul>
+                    <li><strong>Juan:</strong> ¡Qué hermosa foto!</li>
+                    <li><strong>Ana:</strong> Me encanta ese lugar.</li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Añadir un comentario" required>
+                    <button type="submit">Comentar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="post">
+            <h3>Atardecer en la playa</h3>
+            <img src="https://via.placeholder.com/400" alt="Imagen de publicación">
+            <div class="actions">
+                <button class="like-btn">Me gusta</button>
+                <span class="likes">0 me gusta</span>
+            </div>
+            <div class="comments">
+                <h4>Comentarios:</h4>
+                <ul>
+                    <li><strong>Maria:</strong> ¡Increíble vista!</li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Añadir un comentario" required>
+                    <button type="submit">Comentar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
