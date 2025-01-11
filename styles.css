@@ -1,0 +1,64 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor común */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo de la cabecera */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilo de las publicaciones */
+section.publicacion {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4CAF50;
+}
+
+section p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
